@@ -1,0 +1,20 @@
+create table doctor(did char(6) primary key unique not null,dname char(10) not null,title char(10),department char(10),dage int);
+
+alter table doctor add columnt int;
+
+insert into doctor (did,dname,title,department,dage) values ('001','doctor1','主任','内科',40);
+insert into doctor (did,dname,title,department,dage) values ('002','doctor2','医生','外科',45);
+insert into doctor (did,dname,title,department,dage) values ('003','doctor3','主任','儿科',50);
+insert into doctor (did,dname,title,department,dage) values ('004','doctor4','副主任','神经科',38);
+insert into doctor (did,dname,title,department,dage) values ('005','doctor5','主任','放射科',42);
+insert into doctor (did,dname,title,department,dage) values ('006','doctor6','医生','骨科',34);
+
+delete from doctor where dage=34;
+
+update doctor set dname='doctorskr' where did='005';
+
+select * from doctor;
+
+select * from doctor where dage>=40 or title='主任'；
+
+drop table doctor

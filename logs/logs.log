@@ -1,0 +1,19 @@
+2021年6月4日下午3:33:42 -->> :  create table doctor(did char(6) primary key unique not null,dname char(10) not null,title char(10),department char(10),dage int);
+2021年6月5日下午6:08:18 -->> : select * from doctor
+
+Mon Jun 07 21:51:01 CST 2021 ----> : select * from doctor
+
+Tue Jun 08 15:10:55 CST 2021 ----> : select * from doctor;
+
+Tue Jun 08 15:14:27 CST 2021 ----> : select *    from doctor
+Tue Jun 08 15:14:48 CST 2021 ----> : select *                        from   doctor; 
+Tue Jun 08 15:25:54 CST 2021 ----> : select did from doctor
+Tue Jun 08 15:28:11 CST 2021 ----> : insert into doctor (did,dname,title,department,dage) values ('001','doctor1','主任','内科',40)
+Tue Jun 08 15:28:22 CST 2021 ----> : select did from doctor
+Tue Jun 08 15:29:03 CST 2021 ----> : select did from doctor where did='001'
+Tue Jun 08 15:30:17 CST 2021 ----> : select did from doctor where did='001' and dname='doctor1'
+Tue Jun 08 15:31:00 CST 2021 ----> : select did from doctor where did='001' and dname='doctor1'
+Mon Jun 21 19:00:05 CST 2021 ----> : select * from doctor
+
+Mon Jun 21 19:09:41 CST 2021 ----> : select * from doctor;
+Mon Jun 21 19:10:38 CST 2021 ----> :  insert into doctor (did,dname,title,department,dage) values ('002','doctor1','主任','内科',60);
